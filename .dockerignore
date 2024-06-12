@@ -1,0 +1,18 @@
+.git
+.history
+.vscode
+*/*/.DS_Store*
+**/.DS_Store*
+**/.scannerwork
+
+# Cleaning Laravel
+Jenkinsfile
+.dockerignore
+vendor
+bootstrap/cache/*
+storage/app/public/*
+storage/framework/cache/*
+storage/framework/sessions/*
+storage/framework/testing/*
+storage/framework/views/*
+storage/logs/*
