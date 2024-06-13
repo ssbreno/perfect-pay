@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Api\CustomerController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +14,18 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
+
 Route::get('/', function () {
-    return view('customer-form');
+    return view('dashboard');
 });
+
+Route::get('/payment-success', function () {
+    return view('payment-success');
+});
+
+Route::get('/payment-error', function () {
+    return view('payment-error');
+});
+
+Route::post('/api/customers', [CustomerController::class, 'createCustomer']);
